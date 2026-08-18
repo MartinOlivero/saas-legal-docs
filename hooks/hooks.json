@@ -1,0 +1,17 @@
+{
+  "description": "Cuando el pedido es sobre documentos legales, recuerda verificar la vigencia normativa e informa cuántos días hace que se verificó cada tabla contra fuente primaria.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/hooks/check-vigencia.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -58,6 +58,35 @@ them and you get a draft marked `[MISSING]` that does not ship.
 **It verifies the law is still the law, every run.** It does not trust what the model remembers.
 That is not paranoia — see below.
 
+
+### The currency check runs itself
+
+The "verify the law is current" instruction lives in the skill, but instructions depend on the
+model reading and obeying them. So the plugin also ships a hook.
+
+When your prompt looks like it's about legal documents — in English or Spanish — a
+`UserPromptSubmit` hook fires and injects the real state of every normative table:
+
+```
+[legal-docs] Este pedido parece ser sobre documentos legales.
+
+⚠️ ALTO: la tabla más antigua tiene 215 días sin verificar. Muy probablemente algo
+haya cambiado. Verificá contra fuente primaria ANTES de escribir.
+
+Estado de las tablas normativas:
+  🔴 🇦🇷 Argentina           verificada 2026-01-15  (215 días)
+  🟢 🇪🇺 Unión Europea       verificada 2026-08-18  (0 días)
+  ...
+```
+
+This is deliberately a **command hook, not a prompt hook**: a model has no reliable way to know
+how long ago a date in a file was. The script does the arithmetic and escalates the wording —
+green under 90 days, yellow past 90, red past 180 — so staleness is a fact in the transcript
+rather than something you have to remember to check.
+
+It stays quiet on prompts that aren't about legal work, and fails silently (never blocking) if
+anything goes wrong. Requires `python3`, which ships with macOS and virtually every Linux.
+
 ## Two modes
 
 ### Generate
