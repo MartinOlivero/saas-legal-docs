@@ -123,7 +123,7 @@ single most useful contribution to this repo.
 ## Install
 
 ```bash
-/plugin marketplace add MartinOlivero/legal-docs
+/plugin marketplace add MartinOlivero/saas-legal-docs
 /plugin install legal-docs
 ```
 
