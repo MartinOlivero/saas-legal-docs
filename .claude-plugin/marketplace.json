@@ -1,0 +1,17 @@
+{
+  "name": "legal-docs",
+  "owner": {
+    "name": "Martín Olivero / IamAutom",
+    "url": "https://iamautom.com"
+  },
+  "metadata": {
+    "description": "Legal documents for SaaS, deduced from the code — and an audit mode that catches the policy promising what the codebase does not do."
+  },
+  "plugins": [
+    {
+      "name": "legal-docs",
+      "source": "./",
+      "description": "Write and audit terms, privacy policy and security policy from the real schema, providers and pixels. Five jurisdictions with verified normative tables: Argentina, EU, US, Brazil, UK."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "legal-docs",
+  "version": "1.0.0",
+  "description": "Write and audit the legal documents of a SaaS — terms, privacy policy, security policy, consumer buttons — deduced from the real schema, providers and pixels instead of a template. Audit mode compares what the published text promises against what the code actually does. Covers Argentina, EU (GDPR), US, Brazil (LGPD) and UK, each with a normative table verified against primary sources.",
+  "author": {
+    "name": "Martín Olivero / IamAutom",
+    "url": "https://iamautom.com"
+  },
+  "homepage": "https://github.com/MartinOlivero/legal-docs",
+  "repository": "https://github.com/MartinOlivero/legal-docs",
+  "license": "MIT",
+  "keywords": [
+    "claude-code", "claude-code-plugin", "claude-skills",
+    "privacy-policy", "terms-of-service", "legal", "compliance",
+    "gdpr", "lgpd", "ccpa", "bipa", "uk-gdpr",
+    "data-protection", "saas", "privacy", "audit",
+    "ley-25326", "aaip", "anpd", "ico", "ftc"
+  ],
+  "skills": "skills/"
+}
