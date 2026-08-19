@@ -10,11 +10,26 @@
   "repository": "https://github.com/MartinOlivero/saas-legal-docs",
   "license": "MIT",
   "keywords": [
-    "claude-code", "claude-code-plugin", "claude-skills",
-    "privacy-policy", "terms-of-service", "legal", "compliance",
-    "gdpr", "lgpd", "ccpa", "bipa", "uk-gdpr",
-    "data-protection", "saas", "privacy", "audit",
-    "ley-25326", "aaip", "anpd", "ico", "ftc"
-  ],
-  "skills": "skills/"
+    "claude-code",
+    "claude-code-plugin",
+    "claude-skills",
+    "privacy-policy",
+    "terms-of-service",
+    "legal",
+    "compliance",
+    "gdpr",
+    "lgpd",
+    "ccpa",
+    "bipa",
+    "uk-gdpr",
+    "data-protection",
+    "saas",
+    "privacy",
+    "audit",
+    "ley-25326",
+    "aaip",
+    "anpd",
+    "ico",
+    "ftc"
+  ]
 }
